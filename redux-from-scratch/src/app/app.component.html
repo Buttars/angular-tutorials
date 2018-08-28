@@ -1,0 +1,14 @@
+<main>
+  <h3>Global State</h3>
+  {{ store.state | async | json }}
+
+  <h3>Selected State</h3>
+
+  {{ spanish | async | json }}
+
+  <hr>
+  <button (click)="set()">Set</button>
+  <button (click)="update()">Update</button>
+  <button (click)="delete()">Delete</button>
+  <button (click)="deleteGlobal()">Delete Global</button>
+</main>
