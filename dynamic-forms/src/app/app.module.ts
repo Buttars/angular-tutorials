@@ -7,6 +7,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-form-question.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatRadioModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-fo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

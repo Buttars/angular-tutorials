@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { DropdownQuestion } from './questions/question-dropdown';
 import { QuestionBase } from './questions/question-base';
 import { TextboxQuestion } from './questions/question-textbox';
+import { MultipleChoiceQuestion } from './questions/question-multiple-choice';
 
 @Injectable()
 export class QuestionService {
@@ -38,6 +39,17 @@ export class QuestionService {
         label: 'Email',
         type: 'email',
         order: 2
+      }),
+
+      new MultipleChoiceQuestion({
+        key: 'gender',
+        label: 'Gender',
+        options: [
+          { key: 'Male', value: 'male' },
+          { key: 'Female', value: 'female' },
+          { key: 'Apache Helicopter', value: 'apache'}
+        ],
+        order: 4
       })
     ];
 
