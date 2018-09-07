@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
-import { QuestionBase } from '../questions/question-base';
 import { FormGroup } from '@angular/forms';
+import { MultipleChoiceQuestion } from '../questions/question-multiple-choice';
 
 @Component({
   selector: 'app-radio-button-question',
@@ -10,7 +10,7 @@ import { FormGroup } from '@angular/forms';
 export class RadioButtonQuestionComponent {
   @ViewChild('radioGroup') radioGroup;
   @Input() formGroup: FormGroup;
-  @Input() question: QuestionBase<any>;
+  @Input() question: MultipleChoiceQuestion;
 
   onChange = (value: any) => { };
   onTouched = () => { };

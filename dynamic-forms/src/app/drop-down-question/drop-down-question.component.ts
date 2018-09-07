@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { FormGroup, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { QuestionBase } from '../questions/question-base';
+import { DropdownQuestion } from '../questions/question-dropdown';
 
 @Component({
   selector: 'app-drop-down-question',
@@ -17,7 +17,7 @@ import { QuestionBase } from '../questions/question-base';
 export class DropDownQuestionComponent {
   @ViewChild('dropDown') dropDown;
   @Input() formGroup: FormGroup;
-  @Input() question: QuestionBase<any>;
+  @Input() question: DropdownQuestion;
 
   onChange = (value: any) => { };
   onTouched = () => { };
