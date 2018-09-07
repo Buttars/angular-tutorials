@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatRadioModule } from '@angular/material';
 import { TextboxQuestionComponent } from './textbox-question/textbox-question.component';
 import { DropDownQuestionComponent } from './drop-down-question/drop-down-question.component';
+import { RadioButtonQuestionComponent } from './radio-button-question/radio-button-question.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DropDownQuestionComponent } from './drop-down-question/drop-down-questi
     DynamicFormComponent,
     DynamicFormQuestionComponent,
     TextboxQuestionComponent,
-    DropDownQuestionComponent
+    DropDownQuestionComponent,
+    RadioButtonQuestionComponent
   ],
   imports: [
     BrowserModule,

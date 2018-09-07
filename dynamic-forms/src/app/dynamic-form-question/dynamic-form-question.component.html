@@ -15,9 +15,13 @@
                             [formGroup]="form"
                             [question]="question"></app-drop-down-question>
 
-    <mat-radio-group *ngSwitchCase="'radio'" [id]="question.key" [formControlName]="question.key">
+    <!-- <mat-radio-group *ngSwitchCase="'radio'" [id]="question.key" [formControlName]="question.key">
       <mat-radio-button *ngFor="let opt of question.options" [value]="opt.value">{{ opt.key }}</mat-radio-button>
-    </mat-radio-group>
+    </mat-radio-group> -->
+
+    <app-radio-button-question *ngSwitchCase="'radio'"
+                               [formGroup]="form"
+                               [question]="question"></app-radio-button-question>
 
   </div>
 

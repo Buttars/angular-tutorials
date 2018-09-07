@@ -1,0 +1,5 @@
+<div [formGroup]="formGroup">
+  <mat-radio-group (change)="a = $event" [formControlName]="question.key">
+    <mat-radio-button *ngFor="let opt of question.options" [value]="opt.value">{{ opt.key }}</mat-radio-button>
+  </mat-radio-group>
+</div>

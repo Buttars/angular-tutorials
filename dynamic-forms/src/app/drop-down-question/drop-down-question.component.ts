@@ -19,7 +19,7 @@ export class DropDownQuestionComponent {
   @Input() formGroup: FormGroup;
   @Input() question: QuestionBase<any>;
 
-  onChange = (value: any) => { console.log(value) };
+  onChange = (value: any) => { };
   onTouched = () => { };
   writeValue = (value: string) => { this.dropDown.nativeElement.value = value; };
 
