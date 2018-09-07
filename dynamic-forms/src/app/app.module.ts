@@ -10,12 +10,14 @@ import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-fo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatRadioModule } from '@angular/material';
+import { TextboxQuestionComponent } from './textbox-question/textbox-question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DynamicFormComponent,
-    DynamicFormQuestionComponent
+    DynamicFormQuestionComponent,
+    TextboxQuestionComponent
   ],
   imports: [
     BrowserModule,

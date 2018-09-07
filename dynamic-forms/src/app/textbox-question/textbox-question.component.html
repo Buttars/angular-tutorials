@@ -1,0 +1,8 @@
+<div [formGroup]="formGroup">
+  <input [formControlName]="question.key"
+         [id]="question.key"
+         [type]="question.type"
+         (input)="onChange($event.target.value)"
+         (blur)="onTouched()"
+         #textbox>
+</div>
