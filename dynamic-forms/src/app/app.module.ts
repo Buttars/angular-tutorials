@@ -11,13 +11,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatRadioModule } from '@angular/material';
 import { TextboxQuestionComponent } from './textbox-question/textbox-question.component';
+import { DropDownQuestionComponent } from './drop-down-question/drop-down-question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DynamicFormComponent,
     DynamicFormQuestionComponent,
-    TextboxQuestionComponent
+    TextboxQuestionComponent,
+    DropDownQuestionComponent
   ],
   imports: [
     BrowserModule,
